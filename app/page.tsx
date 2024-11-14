@@ -4,16 +4,7 @@ import { Trophy, ChevronLeft, ChevronRight, Archive, Globe, Star } from 'lucide-
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-interface Competition {
-  id: number;
-  name: string;
-  organizer: string;
-  skillset?: string[];
-  place?: string;
-  prize: string;
-  winner?: string;
-  participants?: number;
-}
+
 
 export default function Home() {
   const activeCompetitions = [
@@ -48,7 +39,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-purple-600 opacity-75"></div>
           <div className="relative z-10">
             <h2 className="text-4xl font-bold mb-4">Get Started with Parott</h2>
-            <p className="text-xl mb-6">Join the world's largest community of data scientists and machine learning enthusiasts.</p>
+            <p className="text-xl mb-6">Join the worlds largest community of data scientists and machine learning enthusiasts.</p>
             <a href="#" className="inline-block bg-white text-purple-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">Get Started</a>
           </div>
           <Globe className="absolute right-10 bottom-10 text-white opacity-20 w-40 h-40" />
