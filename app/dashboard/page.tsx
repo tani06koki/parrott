@@ -1,5 +1,9 @@
+// app/dashboard/page.tsx
+"use client"; 
+
 import React, { useState } from 'react';
-import { Share2, FileText, Trophy, Star, Filter, Edit, ChevronRight, Search } from 'lucide-react';
+import Image from 'next/image';
+import { Share2, FileText, Trophy, Star, Filter, Edit, ChevronRight } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -46,7 +50,7 @@ const Dashboard = () => {
           <Card>
             <CardContent className="p-6 pt-10">
               <div className="flex items-center mb-6">
-                <img src="/api/placeholder/80/80" alt="Profile Picture" className="w-20 h-20 rounded-full mr-6" />
+                <Image src="/api/placeholder/80/80" alt="Profile Picture" className="w-20 h-20 rounded-full mr-6" />
                 <div>
                   <h2 className="text-2xl font-semibold text-purple-600">Jane Doe</h2>
                   <p className="text-lg text-gray-600">Data Science Student</p>
